@@ -1,0 +1,6 @@
+name = "wuphf"
+compatibility_date = "2023-02-18"
+
+[vars]
+TO_EMAIL = "violet@viomck.com"
+FROM_EMAIL = "wuphf@viomck.com"
