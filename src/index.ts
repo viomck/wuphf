@@ -1,13 +1,3 @@
-/**
- * Welcome to Cloudflare Workers! This is your first worker.
- *
- * - Run `wrangler dev src/index.ts` in your terminal to start a development server
- * - Open a browser tab at http://localhost:8787/ to see your worker in action
- * - Run `wrangler publish src/index.ts --name my-worker` to publish your worker
- *
- * Learn more at https://developers.cloudflare.com/workers/
- */
-
 import wuphfEmail from "./wuphers/email";
 import wuphfNotifyPhone from "./wuphers/notifyPhone";
 
@@ -39,7 +29,7 @@ export default {
 		if (
 			env.SECRET && 
 			request.headers.get("Authorization") != `Secret ${env.SECRET}` &&
-			
+
 			// allow other workers that use WUPHF via service binding to send
 			// { cf: { skipAuth: true } } to not have to authenticate.  http
 			// clients cannot spoof this 
