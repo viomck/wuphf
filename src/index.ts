@@ -52,7 +52,7 @@ export default {
 					env, 
 					from, 
 					message, 
-					subject || `WUPHF from ${from}`,
+					subject ? subject : `WUPHF from ${from}`,
 				)
 			)
 		);
