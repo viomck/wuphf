@@ -86,7 +86,7 @@ export default {
 		return new Response(
 			JSON.stringify({ successes }),
 			{
-				status: failed ? 200 : 500
+				status: failed ? 500 : 200
 			}
 		);
 	},
